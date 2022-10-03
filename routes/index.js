@@ -1,9 +1,9 @@
 var express = require('express');
+const ProdutoController = require('../controllers/ProdutoController');
+
 var router = express.Router();
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Dev' });
-});
+router.get('/criar', ProdutoController.criarProduto);
+router.get('deletar', (req, res)=> res.send("Deletando um produto"));
 
 module.exports = router;
