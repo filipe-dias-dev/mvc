@@ -1,5 +1,5 @@
 const express = require('express');
-const rotasProdutos = require('./rotas/rotasProdutos');
+const rotasProdutos = require('./routes/rotasProduto');
 let app = express();
 
 app.get('/', (req, res)=> res.send('Olá Filipe!'));
