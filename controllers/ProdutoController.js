@@ -9,5 +9,4 @@ const ProdutoController = {
     },
 }
 
-
 module.exports = ProdutoController;
